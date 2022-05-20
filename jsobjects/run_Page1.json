@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "run",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trun: async () => {\n\ttry{\n\t cloudflare_.run()\n\t status_.run()\n   obj_var.current_node()\n\t obj_info.status()\n\t obj_info.uptime()\n\t obj_ip.current()\n\t }\n\t\tcatch(error){}\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_run",
+  "deleted": false,
+  "gitSyncId": "6241e0cb03598d2fae790df2_62422776904215013d62aed0"
+}

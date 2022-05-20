@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "obj_ip",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcurrent: () => {\n\t\tif (cloudflare_.data.result[\"0\"][\"content\"] == \"s51.ip.tawfek.dk\") {return \"87.104.45.132\"}\n\t\telse if (cloudflare_.data.result[\"0\"][\"content\"] == \"u7a.ip.tawfek.dk\") {return \"80.210.78.252\"}\n\t  else {return \"0.0.0.0\"}},\n\thide: async () => {\n\t\trun.run()\n\t\tshowModal('Modal2')\n\t},\n\tcurrentv6: () => {\n\t\tif (cloudflare_.data.result[\"0\"][\"content\"] == \"s51.ip.tawfek.dk\") {return \"87.104.45.132\"}\n\t\telse if (cloudflare_.data.result[\"0\"][\"content\"] == \"u7a.ip.tawfek.dk\") {return \"87.104.45.132\"}\n\t  else {return \"0.0.0.0\"}},\n\ttest: () => {\n   return }\n}",
+    "variables": []
+  },
+  "id": "Page1_obj_ip",
+  "deleted": false,
+  "gitSyncId": "6242b6c7904215013d62af07_62438786912aa411b96ea6cb"
+}

@@ -19,14 +19,14 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 56,
+          "version": 58,
           "minHeight": 690,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "NONE",
+              "boxShadow": "none",
               "widgetName": "ButtonGroup1",
               "isCanvas": false,
               "dynamicPropertyPathList": [],
@@ -147,21 +147,38 @@
                 }
               ],
               "leftColumn": 28,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "key": "xygkbycbwr",
+              "labelTextSize": "0.875rem",
               "orientation": "horizontal",
               "rightColumn": 58,
               "widgetId": "larjc5xjgi",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "ROUNDED",
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                }
+              },
+              "borderRadius": "0.375rem",
               "buttonVariant": "PRIMARY"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Text4",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                }
+              ],
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 9,
@@ -173,11 +190,13 @@
               "parentColumnSpace": 14.0625,
               "dynamicTriggerPathList": [],
               "overflow": "NONE",
+              "fontFamily": "System Default",
               "leftColumn": 9,
               "dynamicBindingPathList": [],
               "truncateButtonColor": "#FFC13D",
               "text": "Kontrolpanel - alpha",
               "key": "utkyvaa35k",
+              "labelTextSize": "0.875rem",
               "rightColumn": 27,
               "textAlign": "CENTER",
               "widgetId": "2xc4j8kycq",
@@ -188,9 +207,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "fontSize": "HEADING1"
+              "borderRadius": "0px",
+              "fontSize": "1.5rem"
             },
             {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "widgetName": "Tabs1",
               "isCanvas": true,
               "dynamicPropertyPathList": [
@@ -214,14 +235,22 @@
                 }
               ],
               "leftColumn": 9,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 470,
+                  "bottomRow": 440,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -234,10 +263,15 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container1",
                       "borderColor": "transparent",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 3,
@@ -252,44 +286,30 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas14",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "tb3iztw0hn",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "5c2f48vn8u",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Statbox1",
-                              "backgroundColor": "#2E3D49",
-                              "rightColumn": 64,
                               "isCanvas": true,
                               "displayName": "Stats Box",
                               "iconSVG": "/static/media/icon.382a7c7b.svg",
-                              "widgetId": "9ayrk3jg37",
                               "topRow": 0,
-                              "bottomRow": 17,
+                              "bottomRow": 13,
                               "parentRowSpace": 10,
-                              "isVisible": true,
                               "type": "STATBOX_WIDGET",
                               "hideCard": false,
-                              "parentId": "tb3iztw0hn",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
                               "animateLoading": true,
                               "parentColumnSpace": 14.6689453125,
                               "dynamicTriggerPathList": [],
@@ -297,30 +317,28 @@
                               "dynamicBindingPathList": [],
                               "children": [
                                 {
+                                  "boxShadow": "none",
                                   "widgetName": "Canvas6",
-                                  "rightColumn": 234.703125,
-                                  "detachFromLayout": true,
                                   "displayName": "Canvas",
-                                  "widgetId": "ept7y2bdua",
-                                  "containerStyle": "none",
                                   "topRow": 0,
                                   "bottomRow": 140,
                                   "parentRowSpace": 1,
-                                  "isVisible": true,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
-                                  "version": 1,
                                   "hideCard": true,
-                                  "parentId": "9ayrk3jg37",
                                   "minHeight": 140,
-                                  "renderMode": "CANVAS",
-                                  "isLoading": false,
                                   "parentColumnSpace": 1,
                                   "leftColumn": 0,
                                   "children": [
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text10",
                                       "borderColor": "",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 0,
@@ -330,12 +348,14 @@
                                       "animateLoading": true,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 0,
                                       "dynamicBindingPathList": [],
                                       "borderWidth": "",
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "Status",
                                       "key": "98989r1e7l",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 20,
                                       "disableLink": false,
                                       "textAlign": "LEFT",
@@ -347,10 +367,17 @@
                                       "parentId": "ept7y2bdua",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "HEADING2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "1.125rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text11",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 4,
@@ -360,6 +387,7 @@
                                       "animateLoading": true,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 1,
                                       "dynamicBindingPathList": [
                                         {
@@ -369,6 +397,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "{{obj_info.status()}}",
                                       "key": "98989r1e7l",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 43,
                                       "textAlign": "LEFT",
                                       "widgetId": "d01tbhp83b",
@@ -379,10 +408,17 @@
                                       "parentId": "ept7y2bdua",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "HEADING1"
+                                      "borderRadius": "0px",
+                                      "fontSize": "1.5rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text12",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 8,
@@ -392,6 +428,7 @@
                                       "animateLoading": true,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 1,
                                       "dynamicBindingPathList": [
                                         {
@@ -401,6 +438,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "Oppetid: {{obj_info.uptime()}}",
                                       "key": "98989r1e7l",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 64,
                                       "textAlign": "LEFT",
                                       "widgetId": "7sue790o9m",
@@ -411,20 +449,53 @@
                                       "parentId": "ept7y2bdua",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     }
                                   ],
-                                  "key": "gmjqmzhqnf"
+                                  "key": "gmjqmzhqnf",
+                                  "labelTextSize": "0.875rem",
+                                  "rightColumn": 234.703125,
+                                  "detachFromLayout": true,
+                                  "widgetId": "ept7y2bdua",
+                                  "containerStyle": "none",
+                                  "isVisible": true,
+                                  "version": 1,
+                                  "parentId": "9ayrk3jg37",
+                                  "renderMode": "CANVAS",
+                                  "isLoading": false,
+                                  "borderRadius": "0px"
                                 }
                               ],
-                              "key": "vmz7yjgltd"
+                              "key": "vmz7yjgltd",
+                              "labelTextSize": "0.875rem",
+                              "backgroundColor": "#2E3D49",
+                              "rightColumn": 64,
+                              "widgetId": "9ayrk3jg37",
+                              "isVisible": true,
+                              "parentId": "tb3iztw0hn",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "6abx54exjq"
+                          "key": "6abx54exjq",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "tb3iztw0hn",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "5c2f48vn8u",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "0",
                       "key": "clen6r6n6f",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 26,
                       "widgetId": "5c2f48vn8u",
@@ -434,13 +505,18 @@
                       "parentId": "vdrbfn3dup",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container2",
                       "borderColor": "transparent",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 3,
@@ -455,28 +531,21 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas15",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "8fp1hco0ai",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "mpfafabx2h",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Statbox3",
                               "isCanvas": true,
                               "displayName": "Stats Box",
@@ -494,28 +563,21 @@
                               "dynamicBindingPathList": [],
                               "children": [
                                 {
+                                  "boxShadow": "none",
                                   "widgetName": "Canvas12",
-                                  "rightColumn": 219.21875,
-                                  "detachFromLayout": true,
                                   "displayName": "Canvas",
-                                  "widgetId": "6wrezgk8gn",
-                                  "containerStyle": "none",
                                   "topRow": 0,
                                   "bottomRow": 350,
                                   "parentRowSpace": 1,
-                                  "isVisible": true,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
-                                  "version": 1,
                                   "hideCard": true,
-                                  "parentId": "uk3ypv7gt8",
                                   "minHeight": 140,
-                                  "renderMode": "CANVAS",
-                                  "isLoading": false,
                                   "parentColumnSpace": 1,
                                   "leftColumn": 0,
                                   "children": [
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Button7Copy",
                                       "onClick": "{{showAlert('Der skete en fejl i visningen med din IPv6','error')}}",
                                       "buttonColor": "#F6F7F8",
@@ -540,6 +602,7 @@
                                       "text": "Vis IPv6",
                                       "isDisabled": false,
                                       "key": "9dz1kpmzjh",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 51,
                                       "isDefaultClickDisabled": true,
                                       "widgetId": "rm4w7a021w",
@@ -549,12 +612,18 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "borderRadius": "ROUNDED",
+                                      "borderRadius": "0.375rem",
                                       "buttonVariant": "SECONDARY",
                                       "placement": "CENTER"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text20",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 0,
@@ -564,11 +633,13 @@
                                       "animateLoading": true,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 1,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "Detaljer",
                                       "key": "clcy3cwhty",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 32,
                                       "textAlign": "LEFT",
                                       "widgetId": "sxf94fqabg",
@@ -579,10 +650,17 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "HEADING1"
+                                      "borderRadius": "0px",
+                                      "fontSize": "1.5rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text21",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 5,
@@ -592,6 +670,7 @@
                                       "animateLoading": true,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 18,
                                       "dynamicBindingPathList": [
                                         {
@@ -601,6 +680,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "{{obj_info.serverid()}}",
                                       "key": "clcy3cwhty",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 37,
                                       "textAlign": "LEFT",
                                       "widgetId": "bp6bchantr",
@@ -611,10 +691,17 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "HEADING2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "1.125rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text22",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 5,
@@ -624,11 +711,13 @@
                                       "animateLoading": true,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 3,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "Serverid:",
                                       "key": "clcy3cwhty",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 18,
                                       "textAlign": "LEFT",
                                       "widgetId": "ocehtoyq23",
@@ -639,10 +728,17 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text23",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 9,
@@ -654,11 +750,13 @@
                                       "parentColumnSpace": 13.701171875,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 3,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "Hostname:",
                                       "key": "clcy3cwhty",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 20,
                                       "textAlign": "LEFT",
                                       "widgetId": "ou5xp37obi",
@@ -669,9 +767,11 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text24",
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -684,6 +784,7 @@
                                       "parentColumnSpace": 13.701171875,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 20,
                                       "dynamicBindingPathList": [
                                         {
@@ -693,6 +794,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "{{obj_info.serverid()}}.ip.tawfek.dk",
                                       "key": "clcy3cwhty",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 59,
                                       "disableLink": true,
                                       "textAlign": "LEFT",
@@ -704,10 +806,17 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "HEADING3"
+                                      "borderRadius": "0px",
+                                      "fontSize": "1rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text25",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 17,
@@ -719,11 +828,13 @@
                                       "parentColumnSpace": 13.701171875,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 3,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "IP:",
                                       "key": "66u0n5m5uu",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 11,
                                       "textAlign": "LEFT",
                                       "widgetId": "q4ufb5im4c",
@@ -734,9 +845,11 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Button7",
                                       "onClick": "{{obj_ip.hide()}}",
                                       "buttonColor": "#F6F7F8",
@@ -765,6 +878,7 @@
                                       "text": "Vis IPv4",
                                       "isDisabled": false,
                                       "key": "9dz1kpmzjh",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 31,
                                       "isDefaultClickDisabled": true,
                                       "widgetId": "a5tstmvjwr",
@@ -774,12 +888,18 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "borderRadius": "ROUNDED",
+                                      "borderRadius": "0.375rem",
                                       "buttonVariant": "SECONDARY",
                                       "placement": "CENTER"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text29",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 21,
@@ -791,11 +911,13 @@
                                       "parentColumnSpace": 15.166015625,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 3,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "CPU:",
                                       "key": "bb7xzpuoqj",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 12,
                                       "textAlign": "LEFT",
                                       "widgetId": "sp3fykotvt",
@@ -806,9 +928,11 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text30",
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -821,6 +945,7 @@
                                       "parentColumnSpace": 19.8125,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 12,
                                       "dynamicBindingPathList": [
                                         {
@@ -830,6 +955,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "{{status_.data.data.cpus}} kerner",
                                       "key": "bb7xzpuoqj",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 29,
                                       "textAlign": "LEFT",
                                       "widgetId": "nsaxg1vt31",
@@ -840,10 +966,17 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.875rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text31",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 25,
@@ -855,11 +988,13 @@
                                       "parentColumnSpace": 4.189910888671875,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 3,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "RAM:",
                                       "key": "y0cis66qqa",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 12,
                                       "textAlign": "LEFT",
                                       "widgetId": "05ewto29zi",
@@ -870,9 +1005,11 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text32",
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -885,6 +1022,7 @@
                                       "parentColumnSpace": 15.166015625,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 12,
                                       "dynamicBindingPathList": [
                                         {
@@ -894,6 +1032,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "{{obj_info.maxram()}}",
                                       "key": "y0cis66qqa",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 31,
                                       "textAlign": "LEFT",
                                       "widgetId": "06pc27wp70",
@@ -904,10 +1043,17 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.875rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text33",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 29,
@@ -919,11 +1065,13 @@
                                       "parentColumnSpace": 19.8125,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 3,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "SSD:",
                                       "key": "y0cis66qqa",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 12,
                                       "textAlign": "LEFT",
                                       "widgetId": "mssjfyyb1d",
@@ -934,9 +1082,11 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text34",
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -949,6 +1099,7 @@
                                       "parentColumnSpace": 15.166015625,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 12,
                                       "dynamicBindingPathList": [
                                         {
@@ -958,6 +1109,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "{{obj_info.maxssd()}}",
                                       "key": "y0cis66qqa",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 27,
                                       "textAlign": "LEFT",
                                       "widgetId": "1qyi2xijx0",
@@ -968,10 +1120,17 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.875rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text55",
+                                      "dynamicPropertyPathList": [
+                                        {
+                                          "key": "fontSize"
+                                        }
+                                      ],
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
                                       "topRow": 13,
@@ -983,11 +1142,13 @@
                                       "parentColumnSpace": 13.701171875,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 3,
                                       "dynamicBindingPathList": [],
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "Datacenter:",
                                       "key": "z8y9lsx9ti",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 22,
                                       "textAlign": "LEFT",
                                       "widgetId": "gwscv3fxyl",
@@ -998,9 +1159,11 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "PARAGRAPH2"
+                                      "borderRadius": "0px",
+                                      "fontSize": "0.75rem"
                                     },
                                     {
+                                      "boxShadow": "none",
                                       "widgetName": "Text56",
                                       "displayName": "Text",
                                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -1013,6 +1176,7 @@
                                       "parentColumnSpace": 17.9375,
                                       "dynamicTriggerPathList": [],
                                       "overflow": "NONE",
+                                      "fontFamily": "System Default",
                                       "leftColumn": 22,
                                       "dynamicBindingPathList": [
                                         {
@@ -1022,6 +1186,7 @@
                                       "truncateButtonColor": "#FFC13D",
                                       "text": "{{obj_info.datacenter()}}",
                                       "key": "z8y9lsx9ti",
+                                      "labelTextSize": "0.875rem",
                                       "rightColumn": 51,
                                       "textAlign": "LEFT",
                                       "widgetId": "u42uv01pb2",
@@ -1032,27 +1197,53 @@
                                       "parentId": "6wrezgk8gn",
                                       "renderMode": "CANVAS",
                                       "isLoading": false,
-                                      "fontSize": "HEADING3"
+                                      "borderRadius": "0px",
+                                      "fontSize": "1rem"
                                     }
                                   ],
-                                  "key": "rwj4upnyxu"
+                                  "key": "rwj4upnyxu",
+                                  "labelTextSize": "0.875rem",
+                                  "rightColumn": 219.21875,
+                                  "detachFromLayout": true,
+                                  "widgetId": "6wrezgk8gn",
+                                  "containerStyle": "none",
+                                  "isVisible": true,
+                                  "version": 1,
+                                  "parentId": "uk3ypv7gt8",
+                                  "renderMode": "CANVAS",
+                                  "isLoading": false,
+                                  "borderRadius": "0px"
                                 }
                               ],
                               "key": "yp34h52s4o",
+                              "labelTextSize": "0.875rem",
                               "backgroundColor": "#2E3D49",
                               "rightColumn": 64,
                               "widgetId": "uk3ypv7gt8",
                               "isVisible": true,
                               "parentId": "8fp1hco0ai",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "6abx54exjq"
+                          "key": "6abx54exjq",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "8fp1hco0ai",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "mpfafabx2h",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "0",
                       "key": "clen6r6n6f",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 62,
                       "widgetId": "mpfafabx2h",
@@ -1062,13 +1253,18 @@
                       "parentId": "vdrbfn3dup",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container3",
                       "borderColor": "#2E3D49",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 32,
@@ -1084,28 +1280,21 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas16",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "o68myh8uk4",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "7kyh3i2efz",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "ProgressBar1",
                               "isCanvas": false,
                               "displayName": "Progress Bar",
@@ -1126,6 +1315,7 @@
                               ],
                               "key": "dy2xhkj65i",
                               "showResult": true,
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "widgetId": "pgd34520qk",
                               "isVisible": true,
@@ -1134,11 +1324,18 @@
                               "parentId": "o68myh8uk4",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "progress": "{{obj_info.usedram()}}",
                               "barType": "indeterminate"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text35",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -1150,11 +1347,13 @@
                               "parentColumnSpace": 15.166015625,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "RAM brugt",
                               "key": "cbwwz2roj1",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 6,
                               "textAlign": "LEFT",
                               "widgetId": "vixgs88vyr",
@@ -1165,14 +1364,27 @@
                               "parentId": "o68myh8uk4",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH2"
+                              "borderRadius": "0px",
+                              "fontSize": "0.75rem"
                             }
                           ],
-                          "key": "6abx54exjq"
+                          "key": "6abx54exjq",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "o68myh8uk4",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "7kyh3i2efz",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "5",
                       "key": "clen6r6n6f",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#F6F7F8",
                       "rightColumn": 39,
                       "widgetId": "7kyh3i2efz",
@@ -1182,13 +1394,18 @@
                       "parentId": "vdrbfn3dup",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container4",
                       "borderColor": "#2E3D49",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 22,
@@ -1203,28 +1420,21 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas17",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "tz59hmbloj",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "04yxqelfqm",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "ProgressBar2",
                               "isCanvas": false,
                               "displayName": "Progress Bar",
@@ -1245,6 +1455,7 @@
                               ],
                               "key": "44mvsg54tg",
                               "showResult": true,
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "widgetId": "cq4p7qwr9y",
                               "isVisible": true,
@@ -1253,11 +1464,18 @@
                               "parentId": "tz59hmbloj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "progress": "{{obj_info.usedcpu()}}",
                               "barType": "indeterminate"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text36",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -1269,11 +1487,13 @@
                               "parentColumnSpace": 19.8125,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "CPU brugt ",
                               "key": "cbwwz2roj1",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 6,
                               "backgroundColor": "",
                               "textAlign": "LEFT",
@@ -1285,14 +1505,27 @@
                               "parentId": "tz59hmbloj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH2"
+                              "borderRadius": "0px",
+                              "fontSize": "0.75rem"
                             }
                           ],
-                          "key": "6abx54exjq"
+                          "key": "6abx54exjq",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "tz59hmbloj",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "04yxqelfqm",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "5",
                       "key": "clen6r6n6f",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#F6F7F8",
                       "rightColumn": 39,
                       "widgetId": "04yxqelfqm",
@@ -1302,13 +1535,14 @@
                       "parentId": "vdrbfn3dup",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container5",
                       "borderColor": "#34D78A",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 4,
@@ -1323,32 +1557,29 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas18",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "ez5ym1kfp9",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "o6hhic86ya",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
-                              "boxShadow": "NONE",
+                              "boxShadow": "none",
                               "widgetName": "IconButton3",
                               "onClick": "{{run.run()}}",
                               "buttonColor": "#34D78A",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
                               "displayName": "Icon Button",
                               "iconSVG": "/static/media/icon.1a0c634a.svg",
                               "topRow": 1,
@@ -1365,7 +1596,8 @@
                               "dynamicBindingPathList": [],
                               "isDisabled": false,
                               "key": "axudt7emvu",
-                              "rightColumn": 54,
+                              "labelTextSize": "0.875rem",
+                              "rightColumn": 60,
                               "iconName": "refresh",
                               "widgetId": "oo04hilot1",
                               "buttonStyle": "PRIMARY",
@@ -1374,11 +1606,17 @@
                               "parentId": "ez5ym1kfp9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "CIRCLE",
+                              "borderRadius": "9999px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text7",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 8,
@@ -1388,12 +1626,14 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "TRUNCATE",
-                              "leftColumn": 1,
+                              "fontFamily": "System Default",
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Genopfrisk",
                               "key": "acjfgzfu4b",
-                              "rightColumn": 56,
+                              "labelTextSize": "0.875rem",
+                              "rightColumn": 64,
                               "textAlign": "CENTER",
                               "widgetId": "kmlx52wvoi",
                               "isVisible": true,
@@ -1403,14 +1643,27 @@
                               "parentId": "ez5ym1kfp9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH2"
+                              "borderRadius": "0px",
+                              "fontSize": "0.95rem"
                             }
                           ],
-                          "key": "6abx54exjq"
+                          "key": "6abx54exjq",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "ez5ym1kfp9",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "o6hhic86ya",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "borderWidth": "5",
+                      "borderWidth": "",
                       "key": "clen6r6n6f",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 39,
                       "widgetId": "o6hhic86ya",
@@ -1420,11 +1673,12 @@
                       "parentId": "vdrbfn3dup",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "1.5rem"
                     }
                   ],
                   "isDisabled": false,
                   "key": "oxqny3yps0",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Generelt",
                   "rightColumn": 793.5,
                   "detachFromLayout": true,
@@ -1433,10 +1687,12 @@
                   "version": 1,
                   "parentId": "fsu7ofryj0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -1453,6 +1709,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text37",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -1465,11 +1722,13 @@
                       "parentColumnSpace": 19.8125,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 8,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Her kan du anmode om at få åbnet porte til din server.\n\nDu kan læse mere på tawfek.dk/viden/portforwarding",
                       "key": "cbwwz2roj1",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 36,
                       "textAlign": "CENTER",
                       "widgetId": "krxdh628m2",
@@ -1480,9 +1739,11 @@
                       "parentId": "gi98mage8t",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING3"
+                      "borderRadius": "0px",
+                      "fontSize": "1rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Iframe1",
                       "borderColor": "#2E3D49",
                       "srcDoc": "",
@@ -1503,17 +1764,20 @@
                       "dynamicBindingPathList": [],
                       "borderWidth": "4",
                       "key": "bvk4su6gzw",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "widgetId": "6v8bogykvk",
                       "isVisible": true,
                       "version": 1,
                       "parentId": "gi98mage8t",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "oxqny3yps0",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Portforwarding",
                   "rightColumn": 793.5,
                   "detachFromLayout": true,
@@ -1522,10 +1786,12 @@
                   "version": 1,
                   "parentId": "fsu7ofryj0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "taboxpb23k3cd",
+                  "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1541,10 +1807,15 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container8",
                       "borderColor": "#2E3D49",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 0,
@@ -1560,28 +1831,21 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas35",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "9lbuw72zie",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 440,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "c8nlv7y1gv",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Iframe2",
                               "borderColor": "#2E3D49",
                               "dynamicPropertyPathList": [],
@@ -1603,20 +1867,34 @@
                               "dynamicBindingPathList": [],
                               "borderWidth": "0",
                               "key": "bvk4su6gzw",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "widgetId": "v82wdkzqfo",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "9lbuw72zie",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "0b03l3umks"
+                          "key": "0b03l3umks",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "9lbuw72zie",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "c8nlv7y1gv",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "7",
                       "key": "tlir91bqfp",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#FFFFFF",
                       "rightColumn": 63,
                       "widgetId": "c8nlv7y1gv",
@@ -1626,13 +1904,18 @@
                       "parentId": "ips6y8b7rn",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container9",
                       "borderColor": "transparent",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 8,
@@ -1647,28 +1930,21 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas36",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "2a8wi6s8w9",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "cctueapw35",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text63",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -1681,11 +1957,13 @@
                               "parentColumnSpace": 7.1171875,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Du er på datacenter:",
                               "key": "b05ooe8mzw",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 59,
                               "textAlign": "CENTER",
                               "widgetId": "r31xxxar5f",
@@ -1696,9 +1974,11 @@
                               "parentId": "2a8wi6s8w9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING3"
+                              "borderRadius": "0px",
+                              "fontSize": "1rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text64",
                               "borderColor": "#F6F7F8",
                               "displayName": "Text",
@@ -1712,6 +1992,7 @@
                               "parentColumnSpace": 7.1171875,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 9,
                               "dynamicBindingPathList": [
                                 {
@@ -1722,6 +2003,7 @@
                               "truncateButtonColor": "#FFC13D",
                               "text": "{{obj_info.datacenter()}}",
                               "key": "b05ooe8mzw",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 52,
                               "textAlign": "CENTER",
                               "widgetId": "zth9ln7ggv",
@@ -1732,10 +2014,17 @@
                               "parentId": "2a8wi6s8w9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH"
+                              "borderRadius": "0px",
+                              "fontSize": "0.875rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text65",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 2,
@@ -1747,11 +2036,13 @@
                               "parentColumnSpace": 19.8125,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Status",
                               "key": "b05ooe8mzw",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 39,
                               "textAlign": "LEFT",
                               "widgetId": "ojuho71a6u",
@@ -1762,9 +2053,11 @@
                               "parentId": "2a8wi6s8w9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text66",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -1777,11 +2070,13 @@
                               "parentColumnSpace": 19.8125,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 3,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Drift- og statusmeddelser vil stå her.",
                               "key": "b05ooe8mzw",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 61,
                               "textAlign": "LEFT",
                               "widgetId": "1kru6h5yz0",
@@ -1792,9 +2087,11 @@
                               "parentId": "2a8wi6s8w9",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH"
+                              "borderRadius": "0px",
+                              "fontSize": "0.875rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Divider4",
                               "thickness": 2,
                               "displayName": "Divider",
@@ -1812,6 +2109,7 @@
                               "dynamicBindingPathList": [],
                               "key": "xza000yal1",
                               "dividerColor": "#FFC13D",
+                              "labelTextSize": "0.875rem",
                               "orientation": "horizontal",
                               "strokeStyle": "solid",
                               "rightColumn": 57,
@@ -1821,14 +2119,27 @@
                               "version": 1,
                               "parentId": "2a8wi6s8w9",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "0b03l3umks"
+                          "key": "0b03l3umks",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "2a8wi6s8w9",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "cctueapw35",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "0",
                       "key": "tlir91bqfp",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 15,
                       "widgetId": "cctueapw35",
@@ -1838,10 +2149,11 @@
                       "parentId": "ips6y8b7rn",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     }
                   ],
                   "key": "oxqny3yps0",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Host status",
                   "rightColumn": 958.8125,
                   "detachFromLayout": true,
@@ -1851,10 +2163,12 @@
                   "version": 1,
                   "parentId": "fsu7ofryj0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab47n78s5s4h",
+                  "boxShadow": "none",
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1870,10 +2184,15 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container7",
                       "borderColor": "transparent",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 2,
@@ -1888,29 +2207,27 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas33",
-                          "rightColumn": 328.828125,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "am8eks31ry",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 400,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "w3slw0isc0",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text49Copy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1922,11 +2239,13 @@
                               "parentColumnSpace": 15.166015625,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Viden ",
                               "key": "jzfpnrhncb",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 51,
                               "textAlign": "LEFT",
                               "widgetId": "z9rx63ebba",
@@ -1937,14 +2256,27 @@
                               "parentId": "am8eks31ry",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             }
                           ],
-                          "key": "b6cf4u9rma"
+                          "key": "b6cf4u9rma",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 328.828125,
+                          "detachFromLayout": true,
+                          "widgetId": "am8eks31ry",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "w3slw0isc0",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "0",
                       "key": "6lif4tttfw",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 19,
                       "widgetId": "w3slw0isc0",
@@ -1954,11 +2286,17 @@
                       "parentId": "z8xlei7ka7",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Form5",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
                       "topRow": 0,
@@ -1973,29 +2311,27 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas34",
-                          "rightColumn": 328.828125,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "4bfqgq6mz4",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 410,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "p0m56d3zid",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text61",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 2,
@@ -2005,11 +2341,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 3,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Support",
                               "key": "7g64hvgw53",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 15,
                               "textAlign": "LEFT",
                               "widgetId": "nriix0d371",
@@ -2020,10 +2358,12 @@
                               "parentId": "4bfqgq6mz4",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "FormButton7",
                               "buttonColor": "#34D78A",
                               "displayName": "FormButton",
@@ -2038,6 +2378,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Indsend",
                               "key": "aw9cu6q03f",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 26,
                               "isDefaultClickDisabled": true,
                               "widgetId": "0j6t22vcuv",
@@ -2048,11 +2389,13 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "PRIMARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "FilePicker1",
+                              "buttonColor": "#03B365",
                               "displayName": "FilePicker",
                               "iconSVG": "/static/media/icon.7c5ad9c3.svg",
                               "topRow": 35,
@@ -2068,6 +2411,7 @@
                               "dynamicBindingPathList": [],
                               "isDisabled": false,
                               "key": "iqj7zf57pc",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 14,
                               "isDefaultClickDisabled": true,
@@ -2081,10 +2425,12 @@
                               "selectedFiles": [],
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "files": [],
                               "maxNumFiles": "3"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text62",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -2097,11 +2443,13 @@
                               "parentColumnSpace": 4.825439453125,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 3,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Har du brug for hjælp? ",
                               "key": "7g64hvgw53",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 21,
                               "textAlign": "LEFT",
                               "widgetId": "8j3onuj40d",
@@ -2112,9 +2460,11 @@
                               "parentId": "4bfqgq6mz4",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH"
+                              "borderRadius": "0px",
+                              "fontSize": "0.875rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RichTextEditor1",
                               "displayName": "Rich Text Editor",
                               "iconSVG": "/static/media/icon.b35e139c.svg",
@@ -2132,6 +2482,7 @@
                               "inputType": "html",
                               "isDisabled": false,
                               "key": "nuimcped09",
+                              "labelTextSize": "0.875rem",
                               "isRequired": true,
                               "rightColumn": 60,
                               "isDefaultClickDisabled": true,
@@ -2141,13 +2492,26 @@
                               "parentId": "4bfqgq6mz4",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "defaultText": ""
                             }
                           ],
-                          "key": "b6cf4u9rma"
+                          "key": "b6cf4u9rma",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 328.828125,
+                          "detachFromLayout": true,
+                          "widgetId": "4bfqgq6mz4",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "p0m56d3zid",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "tku8vmgmf6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 63,
                       "widgetId": "p0m56d3zid",
@@ -2155,10 +2519,11 @@
                       "parentId": "z8xlei7ka7",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     }
                   ],
                   "key": "gmjqmzhqnf",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Viden & support",
                   "rightColumn": 958.8125,
                   "detachFromLayout": true,
@@ -2168,10 +2533,12 @@
                   "version": 1,
                   "parentId": "fsu7ofryj0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab6g6423ggvk",
+                  "boxShadow": "none",
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -2187,6 +2554,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Image1",
                       "displayName": "Image",
                       "iconSVG": "/static/media/icon.52d8fb96.svg",
@@ -2203,6 +2571,7 @@
                       "dynamicBindingPathList": [],
                       "defaultImage": "https://tawfek.dk/wp-content/uploads/2022/03/undraw_server_re_twwj.svg",
                       "key": "8ix8ra91l2",
+                      "labelTextSize": "0.875rem",
                       "image": "",
                       "rightColumn": 61,
                       "objectFit": "contain",
@@ -2214,9 +2583,11 @@
                       "isLoading": false,
                       "maxZoomLevel": 1,
                       "enableDownload": false,
+                      "borderRadius": "0px",
                       "enableRotation": false
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button4",
                       "onClick": "{{navigateTo('https://console.tawfek.dk', {},'NEW_WINDOW')}}",
                       "buttonColor": "#34D78A",
@@ -2239,6 +2610,7 @@
                       "text": "Gå til konsol",
                       "isDisabled": false,
                       "key": "ava2xrn9hf",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 20,
                       "isDefaultClickDisabled": true,
                       "iconName": "console",
@@ -2249,13 +2621,14 @@
                       "parentId": "vmdm34um0v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "ROUNDED",
+                      "borderRadius": "0.375rem",
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left",
                       "placement": "CENTER"
                     }
                   ],
                   "key": "itc1i6jej5",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Fjernadgang",
                   "rightColumn": 1653.125,
                   "detachFromLayout": true,
@@ -2265,10 +2638,12 @@
                   "version": 1,
                   "parentId": "fsu7ofryj0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tabkd6bcz5a38",
+                  "boxShadow": "none",
                   "widgetName": "Canvas9",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -2284,9 +2659,15 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Form2",
                       "borderColor": "#2E3D49",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
                       "topRow": 2,
@@ -2301,29 +2682,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas26",
-                          "rightColumn": 475.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "35gxhjb4q1",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "heaowjx08m",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "FormButton4",
                               "onClick": "{{showModal('Modal6')}}",
                               "buttonColor": "#F6F7F8",
@@ -2344,6 +2718,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Vælg flere servere",
                               "key": "wqs4ka6gzd",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 58,
                               "isDefaultClickDisabled": true,
                               "widgetId": "nx2s7uf265",
@@ -2354,11 +2729,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "SECONDARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "FormButton3",
                               "onClick": "{{web_.run(() => showModal('Modal4'), () => showAlert('Der skete en fejl','error'))}}",
                               "buttonColor": "#34D78A",
@@ -2378,6 +2754,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Bekræft",
                               "key": "wqs4ka6gzd",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 60,
                               "isDefaultClickDisabled": true,
                               "widgetId": "jxhufvjarf",
@@ -2388,11 +2765,17 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "PRIMARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text49",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 2,
@@ -2404,11 +2787,13 @@
                               "parentColumnSpace": 15.166015625,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "HTTP(S) reverse-proxy ",
                               "key": "jzfpnrhncb",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 51,
                               "textAlign": "LEFT",
                               "widgetId": "c1ehebp9r7",
@@ -2419,9 +2804,11 @@
                               "parentId": "35gxhjb4q1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text15",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -2434,11 +2821,13 @@
                               "parentColumnSpace": 13.701171875,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Vi portforwarder bl.a. ikke port 80/443, her kan du i stedet benytte vores reverse proxy til at route trafik fra dit domæne -> din webserver. Webcertifikat er inkluderet.",
                               "key": "jksdn6bkok",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
                               "widgetId": "7i8fyudxlb",
@@ -2449,9 +2838,11 @@
                               "parentId": "35gxhjb4q1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH"
+                              "borderRadius": "0px",
+                              "fontSize": "0.875rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input1",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2473,16 +2864,22 @@
                               ],
                               "resetOnSubmit": true,
                               "leftColumn": 11,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "BOLD",
                               "labelTextColor": "#F6F7F8",
                               "inputType": "TEXT",
                               "placeholderText": "eksempel.dk",
                               "isDisabled": false,
                               "key": "rvqunhmzu2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": true,
                               "rightColumn": 51,
                               "widgetId": "ex06bsdshn",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "errorMessage": "",
                               "isVisible": true,
                               "label": "Dit domæne",
@@ -2490,10 +2887,12 @@
                               "parentId": "35gxhjb4q1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input2",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -2514,26 +2913,34 @@
                               ],
                               "resetOnSubmit": true,
                               "leftColumn": 6,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "BOLD",
                               "labelTextColor": "#F6F7F8",
                               "inputType": "NUMBER",
                               "placeholderText": "80",
                               "isDisabled": false,
                               "key": "kch4i2sn3c",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 27,
                               "widgetId": "mj6r1lu02t",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Port",
                               "version": 2,
                               "parentId": "35gxhjb4q1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Divider3",
                               "thickness": 2,
                               "displayName": "Divider",
@@ -2551,6 +2958,7 @@
                               "dynamicBindingPathList": [],
                               "key": "hg363mic5x",
                               "dividerColor": "#34D78A",
+                              "labelTextSize": "0.875rem",
                               "orientation": "horizontal",
                               "strokeStyle": "solid",
                               "rightColumn": 59,
@@ -2560,9 +2968,11 @@
                               "version": 1,
                               "parentId": "35gxhjb4q1",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Button16",
                               "onClick": "{{navigateTo('https://viden.tawfek.dk/da/reverse-proxy/', {})}}",
                               "buttonColor": "#34D78A",
@@ -2585,6 +2995,7 @@
                               "text": "Læs mere",
                               "isDisabled": false,
                               "key": "exwdice9l4",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 43,
                               "isDefaultClickDisabled": true,
                               "widgetId": "phesjfzo00",
@@ -2594,11 +3005,12 @@
                               "parentId": "35gxhjb4q1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "TERTIARY",
                               "placement": "CENTER"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text57",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -2611,11 +3023,13 @@
                               "parentColumnSpace": 17.9375,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 28,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "eller",
                               "key": "280rtaqk55",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 34,
                               "textAlign": "CENTER",
                               "widgetId": "5h8nb0shi7",
@@ -2626,13 +3040,26 @@
                               "parentId": "35gxhjb4q1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING3"
+                              "borderRadius": "0px",
+                              "fontSize": "1rem"
                             }
                           ],
-                          "key": "o5hy8yhcet"
+                          "key": "o5hy8yhcet",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 475.5,
+                          "detachFromLayout": true,
+                          "widgetId": "35gxhjb4q1",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "heaowjx08m",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "54371ijz7g",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 62,
                       "widgetId": "heaowjx08m",
@@ -2640,11 +3067,17 @@
                       "parentId": "gzshie7wmy",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Form3",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
                       "topRow": 2,
@@ -2659,29 +3092,27 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas28",
-                          "rightColumn": 363.984375,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "9orvti557a",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "bhshgxzv56",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text52",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 3,
@@ -2691,11 +3122,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 5,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Portforwarding",
                               "key": "rhhgw1nkyy",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 41,
                               "textAlign": "LEFT",
                               "widgetId": "x9q79hkog8",
@@ -2706,10 +3139,12 @@
                               "parentId": "9orvti557a",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "FormButton5",
                               "onClick": "{{port_.run(() => showModal('Modal5'), () => showAlert('Der skete en fejl','error'))}}",
                               "buttonColor": "#34D78A",
@@ -2729,6 +3164,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Bekræft",
                               "key": "fxwe05tjgt",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 58,
                               "isDefaultClickDisabled": true,
                               "widgetId": "0pcbxs43bx",
@@ -2739,10 +3175,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "PRIMARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Divider2",
                               "thickness": 2,
                               "displayName": "Divider",
@@ -2760,6 +3197,7 @@
                               "dynamicBindingPathList": [],
                               "key": "hg363mic5x",
                               "dividerColor": "#34D78A",
+                              "labelTextSize": "0.875rem",
                               "orientation": "horizontal",
                               "strokeStyle": "solid",
                               "rightColumn": 57,
@@ -2769,11 +3207,18 @@
                               "version": 1,
                               "parentId": "9orvti557a",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text38",
                               "borderColor": "#DD4B34",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 24,
@@ -2785,12 +3230,14 @@
                               "parentColumnSpace": 19.8125,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 11,
                               "dynamicBindingPathList": [],
                               "borderWidth": "3",
                               "truncateButtonColor": "#FFC13D",
                               "text": "Alle porte er automatisk forwarded hvis du har tilvalgt en dedikeret IP",
                               "key": "cbwwz2roj1",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 51,
                               "textAlign": "CENTER",
                               "widgetId": "f0x0kcyhlc",
@@ -2801,9 +3248,11 @@
                               "parentId": "9orvti557a",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH2"
+                              "borderRadius": "0px",
+                              "fontSize": "0.75rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input3",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -2819,26 +3268,34 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 13,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "BOLD",
                               "labelTextColor": "#F6F7F8",
                               "inputType": "TEXT",
                               "placeholderText": "51820",
                               "isDisabled": false,
                               "key": "zk9w7xx3u1",
+                              "labelTextSize": "0.875rem",
                               "isRequired": true,
                               "rightColumn": 52,
                               "widgetId": "yhkbgigrwl",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Ekstern port",
                               "version": 2,
                               "parentId": "9orvti557a",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input4",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -2854,26 +3311,34 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 14,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "BOLD",
                               "labelTextColor": "#F6F7F8",
                               "inputType": "TEXT",
                               "placeholderText": "8080",
                               "isDisabled": false,
                               "key": "zk9w7xx3u1",
+                              "labelTextSize": "0.875rem",
                               "isRequired": true,
                               "rightColumn": 52,
                               "widgetId": "1ai0m31hbo",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Intern port",
                               "version": 2,
                               "parentId": "9orvti557a",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Button15",
                               "onClick": "{{navigateTo('https://viden.tawfek.dk/da/Portforwarding/',{},'NEW_WINDOW')}}",
                               "buttonColor": "#34D78A",
@@ -2896,6 +3361,7 @@
                               "text": "Læs mere",
                               "isDisabled": false,
                               "key": "exwdice9l4",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 42,
                               "isDefaultClickDisabled": true,
                               "widgetId": "jzqyazdy1m",
@@ -2905,15 +3371,27 @@
                               "parentId": "9orvti557a",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "TERTIARY",
                               "placement": "CENTER"
                             }
                           ],
-                          "key": "6hts4arbnt"
+                          "key": "6hts4arbnt",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 363.984375,
+                          "detachFromLayout": true,
+                          "widgetId": "9orvti557a",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "bhshgxzv56",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "slrurg93cf",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 27,
                       "widgetId": "bhshgxzv56",
@@ -2921,10 +3399,11 @@
                       "parentId": "gzshie7wmy",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     }
                   ],
                   "key": "itc1i6jej5",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Portforwarding & reverse-proxy",
                   "rightColumn": 1653.125,
                   "detachFromLayout": true,
@@ -2934,10 +3413,12 @@
                   "version": 1,
                   "parentId": "fsu7ofryj0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tabk5e3mxo1zs",
+                  "boxShadow": "none",
                   "widgetName": "Canvas21",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -2953,7 +3434,13 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text41",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 5,
@@ -2965,11 +3452,13 @@
                       "parentColumnSpace": 15.166015625,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 5,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Velkommen til dit kontrolpanel",
                       "key": "d5qcm0s6eg",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 31,
                       "textAlign": "LEFT",
                       "widgetId": "7ms0d7o2cm",
@@ -2980,13 +3469,19 @@
                       "parentId": "q7irsy6dl1",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "Container6",
                       "borderColor": "transparent",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
                       "displayName": "Container",
                       "iconSVG": "/static/media/icon.1977dca3.svg",
                       "topRow": 5,
@@ -3001,28 +3496,21 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas22",
-                          "rightColumn": 363.984375,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "q112fn3i41",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "dcvthq2z1b",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Button12",
                               "onClick": "{{navigateTo('https://portal.tawfek.dk', {},'NEW_WINDOW')}}",
                               "buttonColor": "#34d78a",
@@ -3045,6 +3533,7 @@
                               "text": "Gå til portal",
                               "isDisabled": false,
                               "key": "w522eu37fg",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 30,
                               "isDefaultClickDisabled": true,
                               "widgetId": "td3royvftr",
@@ -3054,11 +3543,12 @@
                               "parentId": "q112fn3i41",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Button13",
                               "onClick": "{{showModal('Modal3')}}",
                               "buttonColor": "#34d78a",
@@ -3081,6 +3571,7 @@
                               "text": "Hvad er portal?",
                               "isDisabled": false,
                               "key": "w522eu37fg",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 55,
                               "isDefaultClickDisabled": true,
                               "widgetId": "b0ayykzc0e",
@@ -3090,12 +3581,18 @@
                               "parentId": "q112fn3i41",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "TERTIARY",
                               "placement": "CENTER"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text47",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 2,
@@ -3107,11 +3604,13 @@
                               "parentColumnSpace": 8.455352783203125,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 5,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Finder du ikke hvad du leder efter?",
                               "key": "gw3h1xyioc",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 52,
                               "textAlign": "LEFT",
                               "widgetId": "ru7idw0vcr",
@@ -3122,9 +3621,11 @@
                               "parentId": "q112fn3i41",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text48",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -3137,11 +3638,13 @@
                               "parentColumnSpace": 8.455352783203125,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 6,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Husk at kontrolpanelet ikke giver adgang til alle ressourcer - det gør vores portal derimod. ",
                               "key": "gw3h1xyioc",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 58,
                               "textAlign": "LEFT",
                               "widgetId": "e33q2a4s1e",
@@ -3152,14 +3655,27 @@
                               "parentId": "q112fn3i41",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH"
+                              "borderRadius": "0px",
+                              "fontSize": "0.875rem"
                             }
                           ],
-                          "key": "o0mv5ex8jb"
+                          "key": "o0mv5ex8jb",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 363.984375,
+                          "detachFromLayout": true,
+                          "widgetId": "q112fn3i41",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "dcvthq2z1b",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "borderWidth": "0",
                       "key": "yqx8b52uif",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#2E3D49",
                       "rightColumn": 61,
                       "widgetId": "dcvthq2z1b",
@@ -3169,9 +3685,10 @@
                       "parentId": "q7irsy6dl1",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "30"
+                      "borderRadius": "30px"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text46",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -3184,11 +3701,13 @@
                       "parentColumnSpace": 15.166015625,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 46,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "",
                       "key": "gw3h1xyioc",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 62,
                       "textAlign": "LEFT",
                       "widgetId": "kbo9e58ssm",
@@ -3199,9 +3718,11 @@
                       "parentId": "q7irsy6dl1",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Image2",
                       "displayName": "Image",
                       "iconSVG": "/static/media/icon.52d8fb96.svg",
@@ -3218,6 +3739,7 @@
                       "dynamicBindingPathList": [],
                       "defaultImage": "https://tawfek.dk/wp-content/uploads/2022/03/undraw_hello_re_3evm.svg",
                       "key": "bfmffzwkyk",
+                      "labelTextSize": "0.875rem",
                       "image": "",
                       "rightColumn": 33,
                       "objectFit": "contain",
@@ -3229,10 +3751,12 @@
                       "isLoading": false,
                       "maxZoomLevel": 1,
                       "enableDownload": false,
+                      "borderRadius": "0px",
                       "enableRotation": false
                     }
                   ],
                   "key": "clm4s5ou1f",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Startside",
                   "rightColumn": 1653.125,
                   "detachFromLayout": true,
@@ -3242,12 +3766,15 @@
                   "version": 1,
                   "parentId": "fsu7ofryj0",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "jt5wee234m",
+              "labelTextSize": "0.875rem",
               "rightColumn": 59,
               "widgetId": "fsu7ofryj0",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Startside",
               "onTabSelected": "{{run.run()}}",
               "shouldShowTabs": true,
@@ -3306,9 +3833,11 @@
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "1.5rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Divider1",
               "thickness": 2,
               "displayName": "Divider",
@@ -3326,6 +3855,7 @@
               "dynamicBindingPathList": [],
               "key": "p2bq516zu2",
               "dividerColor": "#2E3D49",
+              "labelTextSize": "0.875rem",
               "orientation": "horizontal",
               "strokeStyle": "solid",
               "rightColumn": 59,
@@ -3335,10 +3865,17 @@
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Text9",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                }
+              ],
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 69,
@@ -3350,11 +3887,13 @@
               "parentColumnSpace": 33.0625,
               "dynamicTriggerPathList": [],
               "overflow": "TRUNCATE",
+              "fontFamily": "System Default",
               "leftColumn": 9,
               "dynamicBindingPathList": [],
               "truncateButtonColor": "#FFC13D",
               "text": "Powered by tawfek.dk ",
               "key": "vm90ihke3n",
+              "labelTextSize": "0.875rem",
               "rightColumn": 59,
               "textAlign": "RIGHT",
               "widgetId": "ritc3i18ym",
@@ -3365,9 +3904,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "fontSize": "PARAGRAPH2"
+              "borderRadius": "0px",
+              "fontSize": "0.75rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Modal2",
               "isCanvas": true,
               "displayName": "Modal",
@@ -3383,6 +3924,7 @@
               "leftColumn": 12,
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas13",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -3399,7 +3941,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "IconButton5",
                       "onClick": "{{closeModal('Modal2')}}",
                       "buttonColor": "#2E3D49",
@@ -3414,6 +3956,7 @@
                       "iconSize": 24,
                       "isDisabled": false,
                       "key": "ki6qsf9ori",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "iconName": "cross",
                       "widgetId": "0bgykffw6e",
@@ -3422,11 +3965,17 @@
                       "parentId": "ibwf3tn1yq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "SHARP",
+                      "borderRadius": "0px",
                       "buttonVariant": "TERTIARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text26",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 4,
@@ -3436,11 +3985,13 @@
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 6,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Bemærk",
                       "key": "bb7xzpuoqj",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 24,
                       "textAlign": "LEFT",
                       "widgetId": "kf4mnyicn1",
@@ -3451,9 +4002,11 @@
                       "parentId": "ibwf3tn1yq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text27",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -3466,11 +4019,13 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 10,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Hvis du ikke tilkøbt en dedikeret IP bør du ikke benytte adressen - da den kan ændre sig uden varsel - brug i stedet hostnavn.",
                       "key": "bb7xzpuoqj",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 56,
                       "textAlign": "LEFT",
                       "widgetId": "aegq75vdwq",
@@ -3481,9 +4036,11 @@
                       "parentId": "ibwf3tn1yq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text28",
                       "borderColor": "#DD4B34",
                       "displayName": "Text",
@@ -3497,6 +4054,7 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 21,
                       "dynamicBindingPathList": [
                         {
@@ -3507,6 +4065,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "IP: {{obj_ip.current()}}",
                       "key": "bb7xzpuoqj",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 43,
                       "textAlign": "CENTER",
                       "widgetId": "h02o74zmkd",
@@ -3517,11 +4076,13 @@
                       "parentId": "ibwf3tn1yq",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     }
                   ],
                   "isDisabled": false,
                   "key": "1zvqkwz984",
+                  "labelTextSize": "0.875rem",
                   "rightColumn": 475.5,
                   "detachFromLayout": true,
                   "widgetId": "ibwf3tn1yq",
@@ -3529,11 +4090,13 @@
                   "version": 1,
                   "parentId": "vceng2r4sb",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "azo3vme0r6",
               "height": 240,
+              "labelTextSize": "0.875rem",
               "rightColumn": 36,
               "detachFromLayout": true,
               "widgetId": "vceng2r4sb",
@@ -3543,9 +4106,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "width": 456
             },
             {
+              "boxShadow": "none",
               "widgetName": "Modal3",
               "isCanvas": true,
               "displayName": "Modal",
@@ -3561,6 +4126,7 @@
               "leftColumn": 12,
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas23",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -3577,7 +4143,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "IconButton6",
                       "onClick": "{{closeModal('Modal3')}}",
                       "buttonColor": "#DD4B34",
@@ -3594,6 +4160,7 @@
                       "iconSize": 24,
                       "isDisabled": false,
                       "key": "usooqn85dz",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "iconName": "cross",
                       "widgetId": "hsjbsbjrxn",
@@ -3602,11 +4169,17 @@
                       "parentId": "vjvie3os1f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "SHARP",
+                      "borderRadius": "0px",
                       "buttonVariant": "TERTIARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text44",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 2,
@@ -3616,11 +4189,13 @@
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Hvad er portal?",
                       "key": "gw3h1xyioc",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 43,
                       "textAlign": "LEFT",
                       "widgetId": "wmesp9oxii",
@@ -3631,9 +4206,11 @@
                       "parentId": "vjvie3os1f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button11",
                       "onClick": "{{navigateTo('https://portal.tawfek.dk', {},'NEW_WINDOW')}}",
                       "buttonColor": "#34d78a",
@@ -3654,6 +4231,7 @@
                       "text": "Gå til portal",
                       "isDisabled": false,
                       "key": "w522eu37fg",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 59,
                       "isDefaultClickDisabled": true,
                       "widgetId": "gek5onins6",
@@ -3664,11 +4242,12 @@
                       "parentId": "vjvie3os1f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "ROUNDED",
+                      "borderRadius": "0.375rem",
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text45",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -3681,11 +4260,13 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 4,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Portal samler adgangen til alle ressourcer på tawfek.dk på en universel platform.\n\nVi anbefaler at bogmærke portal.tawfek.dk, så du altid har adgang lige ved hånden :-)",
                       "key": "gw3h1xyioc",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 58,
                       "disableLink": true,
                       "textAlign": "LEFT",
@@ -3697,11 +4278,13 @@
                       "parentId": "vjvie3os1f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     }
                   ],
                   "isDisabled": false,
                   "key": "o0mv5ex8jb",
+                  "labelTextSize": "0.875rem",
                   "rightColumn": 475.5,
                   "detachFromLayout": true,
                   "widgetId": "vjvie3os1f",
@@ -3709,11 +4292,13 @@
                   "version": 1,
                   "parentId": "7gjluodgl3",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "e5axlfilrq",
               "height": 240,
+              "labelTextSize": "0.875rem",
               "rightColumn": 36,
               "detachFromLayout": true,
               "widgetId": "7gjluodgl3",
@@ -3723,9 +4308,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "width": 456
             },
             {
+              "boxShadow": "none",
               "widgetName": "Modal4",
               "isCanvas": true,
               "displayName": "Modal",
@@ -3741,29 +4328,22 @@
               "leftColumn": 0,
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas27",
-                  "rightColumn": 0,
-                  "detachFromLayout": true,
                   "displayName": "Canvas",
-                  "widgetId": "dnue77gwhm",
                   "topRow": 0,
                   "bottomRow": 230,
                   "parentRowSpace": 1,
-                  "isVisible": true,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
-                  "version": 1,
                   "hideCard": true,
-                  "parentId": "tux1sjh724",
                   "shouldScrollContents": false,
                   "minHeight": 0,
-                  "renderMode": "CANVAS",
-                  "isLoading": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "children": [
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "IconButton7",
                       "onClick": "{{closeModal('Modal4')}}",
                       "buttonColor": "#DD4B34",
@@ -3780,6 +4360,7 @@
                       "iconSize": 24,
                       "isDisabled": false,
                       "key": "agv4zedyca",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "iconName": "cross",
                       "widgetId": "k6l0mgwry2",
@@ -3788,11 +4369,17 @@
                       "parentId": "dnue77gwhm",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "SHARP",
+                      "borderRadius": "0px",
                       "buttonVariant": "TERTIARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text50",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 4,
@@ -3802,11 +4389,13 @@
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 5,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Success",
                       "key": "rhhgw1nkyy",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 45,
                       "textAlign": "LEFT",
                       "widgetId": "tzd0ybsk10",
@@ -3817,9 +4406,11 @@
                       "parentId": "dnue77gwhm",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text51",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -3832,11 +4423,13 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 5,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Du vil modtage en mail (typisk indenfor 1-2 timer) med bekræftelse samt vejleding til opdatering af DNS",
                       "key": "rhhgw1nkyy",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 61,
                       "textAlign": "LEFT",
                       "widgetId": "hiqi0hfrug",
@@ -3847,9 +4440,11 @@
                       "parentId": "dnue77gwhm",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button14",
                       "onClick": "{{closeModal('Modal4')}}",
                       "buttonColor": "#2E3D49",
@@ -3872,6 +4467,7 @@
                       "text": "OK",
                       "isDisabled": false,
                       "key": "exwdice9l4",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 60,
                       "isDefaultClickDisabled": true,
                       "widgetId": "r1zcaddoif",
@@ -3881,16 +4477,28 @@
                       "parentId": "dnue77gwhm",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     }
                   ],
                   "isDisabled": false,
-                  "key": "6hts4arbnt"
+                  "key": "6hts4arbnt",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 0,
+                  "detachFromLayout": true,
+                  "widgetId": "dnue77gwhm",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "tux1sjh724",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "mwksx3iiwk",
               "height": 240,
+              "labelTextSize": "0.875rem",
               "rightColumn": 0,
               "detachFromLayout": true,
               "widgetId": "tux1sjh724",
@@ -3900,9 +4508,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "width": 456
             },
             {
+              "boxShadow": "none",
               "widgetName": "Modal5",
               "isCanvas": true,
               "displayName": "Modal",
@@ -3918,29 +4528,22 @@
               "leftColumn": 0,
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas29",
-                  "rightColumn": 0,
-                  "detachFromLayout": true,
                   "displayName": "Canvas",
-                  "widgetId": "bydd1fzx6f",
                   "topRow": 0,
                   "bottomRow": 230,
                   "parentRowSpace": 1,
-                  "isVisible": true,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
-                  "version": 1,
                   "hideCard": true,
-                  "parentId": "tcfugsr0rr",
                   "shouldScrollContents": false,
                   "minHeight": 0,
-                  "renderMode": "CANVAS",
-                  "isLoading": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "children": [
                     {
-                      "boxShadow": "NONE",
+                      "boxShadow": "none",
                       "widgetName": "IconButton8",
                       "onClick": "{{closeModal('Modal5')}}",
                       "buttonColor": "#DD4B34",
@@ -3957,6 +4560,7 @@
                       "iconSize": 24,
                       "isDisabled": false,
                       "key": "agv4zedyca",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 64,
                       "iconName": "cross",
                       "widgetId": "kt4tgiw4xy",
@@ -3965,11 +4569,17 @@
                       "parentId": "bydd1fzx6f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "SHARP",
+                      "borderRadius": "0px",
                       "buttonVariant": "TERTIARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text53",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 3,
@@ -3979,11 +4589,13 @@
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 5,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Anmodning indsendt",
                       "key": "rhhgw1nkyy",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 45,
                       "textAlign": "LEFT",
                       "widgetId": "q2fy3ollkq",
@@ -3994,9 +4606,11 @@
                       "parentId": "bydd1fzx6f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button17",
                       "onClick": "{{closeModal('Modal5')}}",
                       "buttonColor": "#03b365",
@@ -4013,6 +4627,7 @@
                       "text": "OK",
                       "isDisabled": false,
                       "key": "exwdice9l4",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 59,
                       "isDefaultClickDisabled": true,
                       "widgetId": "4w66vb7u44",
@@ -4023,11 +4638,12 @@
                       "parentId": "bydd1fzx6f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "ROUNDED",
+                      "borderRadius": "0.375rem",
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text54",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -4040,6 +4656,7 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 5,
                       "dynamicBindingPathList": [
                         {
@@ -4049,6 +4666,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "Vi behandler typisk din anmodning indenfor 1-2 timer - du vil modtage mail når behandlingen er afsluttet.\n\nVed accept vil porten blive forwardet til hostnavnet: {{obj_info.serverid()}}.ip.tawfek.dk",
                       "key": "rhhgw1nkyy",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 60,
                       "disableLink": true,
                       "textAlign": "LEFT",
@@ -4060,15 +4678,27 @@
                       "parentId": "bydd1fzx6f",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     }
                   ],
                   "isDisabled": false,
-                  "key": "6hts4arbnt"
+                  "key": "6hts4arbnt",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 0,
+                  "detachFromLayout": true,
+                  "widgetId": "bydd1fzx6f",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "tcfugsr0rr",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "mwksx3iiwk",
               "height": 240,
+              "labelTextSize": "0.875rem",
               "rightColumn": 0,
               "detachFromLayout": true,
               "widgetId": "tcfugsr0rr",
@@ -4078,9 +4708,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "width": 456
             },
             {
+              "boxShadow": "none",
               "widgetName": "Modal6",
               "isCanvas": true,
               "displayName": "Modal",
@@ -4098,6 +4730,7 @@
               "dynamicBindingPathList": [],
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas30",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -4114,50 +4747,42 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Form4",
-                      "backgroundColor": "white",
-                      "rightColumn": 64,
                       "isCanvas": true,
                       "displayName": "Form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "a2i9yuiqsg",
                       "topRow": 0,
                       "bottomRow": 23,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "4g5mmdhlub",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.9375,
                       "leftColumn": 0,
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas31",
-                          "rightColumn": 166.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "s663wko581",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "a2i9yuiqsg",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text59",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -4167,11 +4792,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Loadbalancer",
                               "key": "7g64hvgw53",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 26,
                               "textAlign": "LEFT",
                               "widgetId": "j3ik93qwpg",
@@ -4182,10 +4809,12 @@
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "FormButton6",
                               "buttonColor": "#34D78A",
                               "displayName": "FormButton",
@@ -4200,6 +4829,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Bekræft",
                               "key": "aw9cu6q03f",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 64,
                               "isDefaultClickDisabled": true,
                               "widgetId": "xgseajydy0",
@@ -4210,11 +4840,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "PRIMARY"
                             },
                             {
-                              "boxShadow": "NONE",
+                              "boxShadow": "none",
                               "widgetName": "IconButton10",
                               "onClick": "{{closeModal('Modal6')}}",
                               "buttonColor": "#DD4B34",
@@ -4231,6 +4861,7 @@
                               "iconSize": 24,
                               "isDisabled": false,
                               "key": "zyw8myk3vj",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 64,
                               "iconName": "cross",
                               "widgetId": "bw9gg284jl",
@@ -4239,10 +4870,11 @@
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "SHARP",
+                              "borderRadius": "0px",
                               "buttonVariant": "TERTIARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input7",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -4260,6 +4892,9 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "BOLD",
@@ -4267,19 +4902,23 @@
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "ay2o0d7h69",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 24,
                               "widgetId": "av1ns7qpsi",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "VPS #1",
                               "version": 2,
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{obj_info.serverid()}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text60",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -4292,11 +4931,13 @@
                               "parentColumnSpace": 6.625,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Har du flere servere, som du vil balancere trafik mellem - kan du oprette en loadbalancer. ",
                               "key": "7g64hvgw53",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 57,
                               "textAlign": "LEFT",
                               "widgetId": "n5oog6hvxr",
@@ -4307,9 +4948,11 @@
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "PARAGRAPH"
+                              "borderRadius": "0px",
+                              "fontSize": "0.875rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input8",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -4325,26 +4968,34 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 24,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "BOLD",
                               "labelTextColor": "#2E3D49",
                               "inputType": "NUMBER",
                               "placeholderText": "",
                               "isDisabled": false,
                               "key": "ay2o0d7h69",
+                              "labelTextSize": "0.875rem",
                               "isRequired": true,
                               "rightColumn": 45,
                               "widgetId": "rm3s7og7vc",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Port",
                               "version": 2,
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input9",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -4360,25 +5011,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "BOLD",
                               "labelTextColor": "#2E3D49",
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "ay2o0d7h69",
+                              "labelTextSize": "0.875rem",
                               "isRequired": true,
                               "rightColumn": 24,
                               "widgetId": "o2hbdi8s8x",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "VPS #2",
                               "version": 2,
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Input10",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -4394,25 +5053,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 24,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "BOLD",
                               "labelTextColor": "#2E3D49",
                               "inputType": "NUMBER",
                               "isDisabled": false,
                               "key": "ay2o0d7h69",
+                              "labelTextSize": "0.875rem",
                               "isRequired": true,
                               "rightColumn": 45,
                               "widgetId": "j14nqridv6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Port",
                               "version": 2,
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Button18",
                               "onClick": "{{navigateTo('https://viden.tawfek.dk', {},'NEW_WINDOW')}}",
                               "buttonColor": "#34D78A",
@@ -4435,6 +5102,7 @@
                               "text": "Læs mere",
                               "isDisabled": false,
                               "key": "rt775mgn0g",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 64,
                               "isDefaultClickDisabled": true,
                               "widgetId": "xf7bl66h1o",
@@ -4444,19 +5112,40 @@
                               "parentId": "s663wko581",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "ROUNDED",
+                              "borderRadius": "0.375rem",
                               "buttonVariant": "TERTIARY",
                               "placement": "CENTER"
                             }
                           ],
-                          "key": "b6cf4u9rma"
+                          "key": "b6cf4u9rma",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 166.5,
+                          "detachFromLayout": true,
+                          "widgetId": "s663wko581",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "a2i9yuiqsg",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "tku8vmgmf6"
+                      "key": "tku8vmgmf6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 64,
+                      "widgetId": "a2i9yuiqsg",
+                      "isVisible": true,
+                      "parentId": "4g5mmdhlub",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "b6cf4u9rma",
+                  "labelTextSize": "0.875rem",
                   "rightColumn": 0,
                   "detachFromLayout": true,
                   "widgetId": "4g5mmdhlub",
@@ -4464,11 +5153,13 @@
                   "version": 1,
                   "parentId": "cp03pggyi1",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "9ho85gscbg",
               "height": 240,
+              "labelTextSize": "0.875rem",
               "rightColumn": 0,
               "detachFromLayout": true,
               "widgetId": "cp03pggyi1",
@@ -4478,6 +5169,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "width": 456
             }
           ]

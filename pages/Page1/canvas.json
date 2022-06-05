@@ -1625,7 +1625,7 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
-                              "overflow": "TRUNCATE",
+                              "overflow": "NONE",
                               "fontFamily": "System Default",
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
@@ -5182,8 +5182,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "obj_var.servertype()",
-                "obj_var.serverid()"
+                "obj_var.serverid()",
+                "obj_var.servertype()"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -5193,8 +5193,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "obj_var.servertype()",
-                "obj_var.serverid()"
+                "obj_var.serverid()",
+                "obj_var.servertype()"
               ],
               "timeoutInMillisecond": 10000
             }

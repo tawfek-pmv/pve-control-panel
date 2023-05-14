@@ -2915,7 +2915,7 @@
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
-                              "text": "HTTP(S) reverse-proxy ",
+                              "text": "HTTPS reverse-proxy ",
                               "key": "jzfpnrhncb",
                               "labelTextSize": "0.875rem",
                               "rightColumn": 51,
@@ -2952,7 +2952,7 @@
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
-                              "text": "Vi portforwarder bl.a. ikke port 80/443, her kan du i stedet benytte vores reverse proxy til at route trafik fra dit domæne -> din webserver. Webcertifikat er inkluderet.",
+                              "text": "Du kan benytte vores reverse proxy til kvit og frit at route trafik fra dit domæne -> din webserver. Webcertifikat er inkluderet.",
                               "key": "jksdn6bkok",
                               "labelTextSize": "0.875rem",
                               "rightColumn": 62,
@@ -5444,8 +5444,8 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "obj_var.current_node()",
-                "obj_var.servertype()",
-                "obj_var.serverid()"
+                "obj_var.serverid()",
+                "obj_var.servertype()"
               ],
               "timeoutInMillisecond": 10000
             }

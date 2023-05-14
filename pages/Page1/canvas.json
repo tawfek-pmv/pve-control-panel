@@ -50,6 +50,20 @@
                   "menuItems": {},
                   "onClick": "{{start_.run(() => showAlert('Server starter - der kan gå op til 30 sekunder før den er startet','success'), () => showAlert('Der skete en fejl','error'))}}"
                 },
+                "groupButton1": {
+                  "label": "Genstart",
+                  "iconName": "refresh",
+                  "id": "groupButton1",
+                  "widgetId": "",
+                  "buttonColor": "#34D78A",
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1,
+                  "menuItems": {},
+                  "onClick": "{{reboot_.run(() => showAlert('Server genstarter','success'), () => showAlert('Der skete en fejl - er serveren slukket?','error'))}}"
+                },
                 "groupButton3": {
                   "label": "Sluk",
                   "iconName": "power",
@@ -60,7 +74,7 @@
                   "widgetId": "",
                   "isVisible": true,
                   "isDisabled": false,
-                  "index": 1,
+                  "index": 2,
                   "menuItems": {
                     "menuItem1": {
                       "label": "First Option",
@@ -98,20 +112,6 @@
                     }
                   },
                   "onClick": "{{shutdown_.run(() => showAlert('Slukker server','success'), () => showAlert('Der skete en fejl','warning'))}}"
-                },
-                "groupButton1": {
-                  "label": "Genstart",
-                  "iconName": "refresh",
-                  "id": "groupButton1",
-                  "widgetId": "",
-                  "buttonColor": "#34D78A",
-                  "buttonType": "SIMPLE",
-                  "placement": "CENTER",
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "index": 2,
-                  "menuItems": {},
-                  "onClick": "{{reboot_.run(() => showAlert('Server genstarter','success'), () => showAlert('Der skete en fejl - er serveren slukket?','error'))}}"
                 },
                 "groupButtonwm66tkli8x": {
                   "id": "groupButtonwm66tkli8x",
@@ -3407,7 +3407,7 @@
                               "iconSVG": "/static/media/icon.9f505595.svg",
                               "topRow": 10,
                               "bottomRow": 14,
-                              "tooltip": "Den port der skal tilgåes fra internettet. Du kan åbne portblokke med syntaksen \"XXX-XXX\". Vi åbner sjælendt systemporte (typisk  porte under 1000) - tryk \"læs mere\" for at se specifikt hvilke porte vi blokerer. Har du en dedikeret ip er ingen porte blokeret.",
+                              "tooltip": "Den port der skal tilgås fra internettet. Du kan åbne portblokke med syntaksen \"XXX-XXX\".",
                               "parentRowSpace": 10,
                               "autoFocus": false,
                               "type": "INPUT_WIDGET_V2",
@@ -4005,7 +4005,7 @@
                   "id": "tab47n78s5s4h",
                   "label": "Viden & support",
                   "widgetId": "z8xlei7ka7",
-                  "isVisible": true,
+                  "isVisible": false,
                   "index": 6,
                   "isDuplicateLabel": false
                 }
@@ -5024,7 +5024,7 @@
                               "text": "Loadbalancer",
                               "key": "7g64hvgw53",
                               "labelTextSize": "0.875rem",
-                              "rightColumn": 26,
+                              "rightColumn": 36,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "j3ik93qwpg",

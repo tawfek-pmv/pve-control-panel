@@ -1,0 +1,3 @@
+domæne: {{Input1.text}}	
+port: {{Input2.text}}	
+serverid {{obj_info.serverid()}}	

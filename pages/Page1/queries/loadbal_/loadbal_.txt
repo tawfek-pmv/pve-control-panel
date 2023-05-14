@@ -1,0 +1,3 @@
+server 1: {{Input7.text}}	| Port: {{Input8.text}}	
+
+server 2: {{Input9.text}} | Port: {{Input10.text}}	

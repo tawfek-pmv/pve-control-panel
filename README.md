@@ -1,6 +1,6 @@
 Customer-oriented Proxmox control panel built in AppSmith using the Proxmox API - running in production at [tawfek.dk](https://tawfek.dk)
 
-Live Demo here: https://panel.tawfek.dk/
+Live demo here: https://panel.tawfek.dk/
 
 Can be imported into a AppSmith enterprise deployment or a community deployment(though with modifictions, since SSO won't work without an business/enterprise license)
 
